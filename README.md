@@ -183,9 +183,10 @@ aws cloudformation wait stack-delete-complete --stack-name MiSolucionPro
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/)
 - [Boto3 Documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 
-## Feedback
 
-Your feedback is appreciated. Please use the [AWS Training and Certification Contact Form](https://www.aws.training/contact-us) for suggestions or corrections.
+## Notes on Lab Environment and Resource Lifecycle
+
+This project was developed and tested in a temporary AWS lab environment. All resources are automatically deleted at the end of each session, ensuring no persistent infrastructure or ongoing costs. The repository and documentation are for personal learning and demonstration purposes only, and are not affiliated with or endorsed by AWS.
 
 
 
