@@ -108,11 +108,14 @@ graph TD
 
 *Note: Mermaid diagrams may not render in all Markdown viewers. Use the image below for a graphical reference.*
 
+
 ## Architecture Diagram (Image)
+
+Below is a screenshot showing the successful execution of the deployment script and the resulting AWS resources. This visual evidence complements the logical and topological diagrams, providing a real-world example of the infrastructure in action.
 
 ![AWS VPC and EC2 Architecture](docs/challenge-diagram.png)
 
-*Diagram: This image illustrates the topological view of the VPC, subnet, Internet Gateway, security group, and EC2 instance. It is intended for visual presentations and documentation.*
+*Screenshot: Demonstrates the deployment process, CloudFormation stack creation, and the running EC2 instance within the VPC as described in this project.*
 
 
 ## Example Output
@@ -208,5 +211,17 @@ This project was developed and tested in a temporary AWS lab environment. All re
 - Some resources may have dependencies or manual changes. Use the console to investigate and remove dependencies if needed.
 
 This repository is for educational and demonstration purposes only. Consider adding a LICENSE file if you plan to share or reuse this code.
+
+
+## What We Learned
+
+Through this project, we practiced the end-to-end process of defining, deploying, and validating AWS infrastructure using Infrastructure as Code (IaC) principles. We reinforced key concepts such as:
+
+- Structuring a reproducible and maintainable repository for cloud projects
+- Using AWS CloudFormation to automate the creation of VPCs, subnets, security groups, and EC2 instances
+- Validating and troubleshooting deployments in a safe, temporary environment
+- Documenting both the logic and the practical results of cloud automation
+
+This hands-on approach strengthens both technical and documentation skills, providing a solid foundation for future cloud engineering challenges.
 
 © 2022, Amazon Web Services, Inc. and affiliates. All rights reserved. This content may not be reproduced or redistributed without prior written permission from Amazon Web Services, Inc.
