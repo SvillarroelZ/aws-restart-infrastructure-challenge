@@ -86,11 +86,33 @@ Deploy your CloudFormation template and verify each resource is created. Trouble
 **Why:** Iterative testing ensures reliability and correctness of your infrastructure-as-code solution.
 
 
-## Architecture Diagram
+
+## Mermaid Architecture Diagram
+
+The following Mermaid diagram illustrates the logical relationships and resource dependencies as defined in the CloudFormation template. This is useful for understanding the infrastructure-as-code logic and how each component interacts:
+
+```mermaid
+graph TD
+	VPC["VPC-Laboratorio"]
+	IGW["InternetGateway"]
+	Subnet["Subred-Privada"]
+	SG["SecurityGroup (SSH)"]
+	EC2["Servidor-Lab (EC2)"]
+
+	VPC --> IGW
+	VPC --> Subnet
+	Subnet --> EC2
+	EC2 --> SG
+	IGW --> VPC
+```
+
+*Note: Mermaid diagrams may not render in all Markdown viewers. Use the image below for a graphical reference.*
+
+## Architecture Diagram (Image)
 
 ![AWS VPC and EC2 Architecture](docs/challenge-diagram.png)
 
-*Diagram: This image illustrates the logical relationships between the VPC, private subnet, Internet Gateway, security group, and EC2 instance. It visually supports the resource definitions in the CloudFormation template.*
+*Diagram: This image illustrates the topological view of the VPC, subnet, Internet Gateway, security group, and EC2 instance. It is intended for visual presentations and documentation.*
 
 
 ## Example Output
